@@ -25,8 +25,9 @@ DIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 # Change into that dir because we expect that
 cd $DIR
 
-echo "## Removing old directory..."
+echo -n "## Removing old directory... "
 rm -rf dist && mkdir dist
+echo "OK"
 
 # Packaging builds
 echo "## Packaging..."

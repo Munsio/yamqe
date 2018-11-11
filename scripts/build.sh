@@ -21,8 +21,9 @@ DIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 # Change into that directory
 cd "$DIR"
 
-echo "## Recreate directory..."
+echo -n "## Recreate directory... "
 rm -rf build && mkdir build
+echo "OK"
 
 # instruct to build statically linked binaries
 export CGO_ENABLED=0
